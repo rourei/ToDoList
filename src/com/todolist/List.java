@@ -4,8 +4,9 @@ import java.util.HashMap;
 
 /* ### TO DO ###
 [x] method to toggle particular item state
-[ ] method to remove individual items
+[x] method to remove individual items
 [x] adding item IDs?
+[ ] check item existence before toggling / removing
 */
 
 public class List {
@@ -39,6 +40,11 @@ public class List {
     // Toggle item state by ID
     public void toggleItem(int id){
         items.get(id).toggleDone();
+    }
+
+    // Remove item by ID
+    public void removeItem(int id){
+        items.remove(id);
     }
 
     // Output all items in array

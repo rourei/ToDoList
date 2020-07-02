@@ -30,6 +30,14 @@ public class Main {
         l.addToDo("Repair car");
         l.printItems();
 
+        // Remove one of the items and output result
+        System.out.println(); // Blank line for better readability
+        l.removeItem(1);
+        l.printItems();
+
+        // Add another item
+        l.addToDo("Laundry");
+
         // Toggle one of the items and output result
         System.out.println(); // Blank line for better readability
         l.toggleItem(2);
