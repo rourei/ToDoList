@@ -1,5 +1,8 @@
 package com.todolist;
 
+// 'this' in getter / setter methods is only necessary, when an argument has the same name
+// as a field in order to distinguish them.
+
 public class Item {
     // Members
     private String title;
@@ -13,20 +16,20 @@ public class Item {
 
     // Getter to retrieve members
     public String getTitle() {
-        return this.title;
+        return title;
     }
 
     public boolean isDone() {
-        return this.done;
+        return done;
     }
 
     // Setter to change done state
     public void toggleDone() {
-        this.done = !this.done;
+        done = !done;
     }
 
     // Printing members
     public void printInformation(){
-        System.out.println(this.title + " | Done: " + this.done);
+        System.out.println(title + " | Done: " + done);
     }
 }
