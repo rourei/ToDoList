@@ -10,8 +10,8 @@ public class Main {
 
         // Create new item and print members to console using getter methods
 	    Item it = new Item("Learn Java");
-        System.out.println(it.getTitle());
-        System.out.println(it.isDone());
+        System.out.println("Item title by getter: " + it.getTitle());
+        System.out.println("Item state by getter: " + it.isDone());
 
 	    // Toggle state and print members using formatted class method
         it.toggleDone();
@@ -22,7 +22,7 @@ public class Main {
 
         // Create new to-do list instance and print name using getter method
         List l = new List("Wednesday");
-        System.out.println("List name: " + l.getName());
+        System.out.println("List name by getter: " + l.getName());
 
         // Add some to-dos and print list content to console
         l.addToDo("Shopping");
