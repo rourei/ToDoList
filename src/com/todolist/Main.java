@@ -35,6 +35,14 @@ public class Main {
         l.removeItem(1);
         l.printItems();
 
+        // Try to toggle item state of previously removed item
+        System.out.println(); // Blank line for better readability
+        l.toggleItem(1);
+
+        // Try to remove non-existing item
+        System.out.println(); // Blank line for better readability
+        l.removeItem(12);
+
         // Add another item
         l.addItem("Laundry");
 

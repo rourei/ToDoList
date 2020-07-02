@@ -6,7 +6,7 @@ import java.util.HashMap;
 [x] method to toggle particular item state
 [x] method to remove individual items
 [x] adding item IDs?
-[ ] check item existence before toggling / removing
+[x] check item existence before toggling / removing
 */
 
 public class List {
@@ -39,12 +39,26 @@ public class List {
 
     // Toggle item state by ID
     public void toggleItem(int id){
-        items.get(id).toggleDone();
+        // Check existence of requested item id
+        if (items.containsKey(id)) {
+            // Update state of requested item
+            items.get(id).toggleDone();
+        }
+        else {
+            System.out.println("Could not toggle item state. Requested item does not exist.");
+        }
     }
 
     // Remove item by ID
     public void removeItem(int id){
-        items.remove(id);
+        // Check existence of requested item id
+        if (items.containsKey(id)) {
+            // Remove requested item
+            items.remove(id);
+        }
+        else {
+            System.out.println("Could not remove item. Requested item does not exist.");
+        }
     }
 
     // Output all items in array
