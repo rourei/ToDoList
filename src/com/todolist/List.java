@@ -3,7 +3,7 @@ package com.todolist;
 import java.util.HashMap;
 
 /* ### TO DO ###
-[ ] method to toggle particular item state
+[x] method to toggle particular item state
 [ ] method to remove individual items
 [x] adding item IDs?
 */
@@ -34,6 +34,11 @@ public class List {
     // Empty entire list
     public void empty(){
         items.clear();
+    }
+
+    // Toggle item state by ID
+    public void toggleItem(int id){
+        items.get(id).toggleDone();
     }
 
     // Output all items in array

@@ -29,7 +29,14 @@ public class Main {
         l.addToDo("Work out");
         l.addToDo("Repair car");
         l.printItems();
+
+        // Toggle one of the items and output result
+        System.out.println(); // Blank line for better readability
+        l.toggleItem(2);
+        l.printItems();
+
         // Empty list and print contents again
+        System.out.println(); // Blank line for better readability
         l.empty();
         l.printItems();
     }
