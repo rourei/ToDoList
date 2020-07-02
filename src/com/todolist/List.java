@@ -13,7 +13,7 @@ public class List {
     // Members
     private String name;
     private HashMap<Integer, Item> items = new HashMap<Integer, Item>();
-    private static int id_counter = 1;
+    private int id_counter = 1;
 
     // Constructor
     public List(String name){
@@ -35,6 +35,8 @@ public class List {
     // Empty entire list
     public void empty(){
         items.clear();
+        // Reset ID counter
+        id_counter = 1;
     }
 
     // Toggle item state by ID
