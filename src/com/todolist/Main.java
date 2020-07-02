@@ -25,9 +25,9 @@ public class Main {
         System.out.println("List name by getter: " + l.getName());
 
         // Add some to-dos and print list content to console
-        l.addToDo("Shopping");
-        l.addToDo("Work out");
-        l.addToDo("Repair car");
+        l.addItem("Shopping");
+        l.addItem("Work out");
+        l.addItem("Repair car");
         l.printItems();
 
         // Remove one of the items and output result
@@ -36,7 +36,7 @@ public class Main {
         l.printItems();
 
         // Add another item
-        l.addToDo("Laundry");
+        l.addItem("Laundry");
 
         // Toggle one of the items and output result
         System.out.println(); // Blank line for better readability

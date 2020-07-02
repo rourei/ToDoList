@@ -26,7 +26,7 @@ public class List {
     }
 
     // Adding to-do items
-    public void addToDo(String item_title){
+    public void addItem(String item_title){
         // Add new item to map and increment counter
         items.put(id_counter, new Item(item_title));
         id_counter++;
